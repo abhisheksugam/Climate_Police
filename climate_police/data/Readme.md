@@ -32,11 +32,11 @@ We have two datasets for this project:
     GlobalLandTemperaturesByCity.csv
 * **Description**: The data is from a newer compilation put together by the Berkeley Earth, which is affiliated with Lawrence Berkeley National Laboratory. The Berkeley Earth Surface Temperature Study combines 1.6 billion temperature reports from 16 pre-existing archives.
 * **Size**:
-    GlobalTemperatures: 3192 rows × 9 columns
-    GlobalLandTemperaturesByCountry: 577462 rows × 4 columns
-    GlobalLandTemperaturesByState: 645675 rows × 5 columns
-    GlobalLandTemperaturesByMajorCity: 239177 rows × 7 columns
-    GlobalLandTemperaturesByCity: 8599212 rows × 7 columns
+    * GlobalTemperatures: 3192 rows × 9 columns
+    * GlobalLandTemperaturesByCountry: 577462 rows × 4 columns
+    * GlobalLandTemperaturesByState: 645675 rows × 5 columns
+    * GlobalLandTemperaturesByMajorCity: 239177 rows × 7 columns
+    * GlobalLandTemperaturesByCity: 8599212 rows × 7 columns
 * **Fields**: In the GlobalTemperatures data, for example, we have
     1. Date: starts in 1750 for average land temperature and 1850 for max and min land temperatures and global ocean and land temperatures
     * LandAverageTemperature: global average land temperature in celsius
