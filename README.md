@@ -23,7 +23,7 @@ Users can visualize our data and results and draw conclusions about this undenia
 
 #### License Information 
 
-The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT). As a permissive license, it puts only very limited restriction on reuse and has therefore an excellent license compatibility. For detailed description of the contents of license please refer to the file LICENSE. 
+The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT). As a permissive license, it puts only very limited restriction on reuse and has therefore an excellent license compatibility. For detailed description of the contents of license please refer to the file [License](https://github.com/abhisheksugam/Climate_Police/blob/master/License). 
 
 
 ----
@@ -33,10 +33,11 @@ The package is organized as follows:
 ```
 climate_police (master)
 |     .gitignore
-|     LICENSE
+|     License
 |     README.md
-|      
-|----- doc
+|     project_overview.md
+|
+|----- docs
 |     |      CSE_599_B1_Project_overview.docx
 |     |      CSE_599_B1_Project_overview.pdf
 |----- climate_police
