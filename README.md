@@ -1,4 +1,5 @@
-# Climate_Police: "Analysis and visualization of Climate change and its correlation with pollution"  
+# Climate_Police
+## "Analysis and visualization of Climate change and its correlation with pollution"  
 
 The Climate Police team is eager to make this project as an eye opener for people and companies denying the climate change and the adverse effect of pollution. 
 
