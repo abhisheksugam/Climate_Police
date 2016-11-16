@@ -1,2 +1,2 @@
-# Climate_Change
-Visualization of Climate change &amp; its correlation with pollution
+# Climate_Police
+Analysis and visualization of Climate change &amp; its correlation with pollution
