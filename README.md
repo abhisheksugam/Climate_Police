@@ -35,12 +35,12 @@ climate_police (master)
 |     .gitignore
 |     License
 |     README.md
-|     project_overview.md
 |
 |----- docs
 |     |      CSE_599_B1_Project_overview.docx
 |     |      CSE_599_B1_Project_overview.pdf
-|     |
+|     |      project_overview.md
+|     |      
 |----- climate_police
 |     |   __init__.py
 |     |
