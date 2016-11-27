@@ -51,34 +51,39 @@ def get_temperature_data():
     """
     Download temperature data, unless already downloaded
     """
-    download_if_needed('http://bit.ly/2fRicsj','GlobalLandTemperatures.zip')
+    download_if_needed('https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data/downloads/GlobalLandTemperatures.zip',
+    'GlobalLandTemperatures.zip')
 
 def global_temp_country():
     """
     Fetch data (if needed) and extract global temperatures of countries
     """
-    get_pronto_data()
+    get_temperature_data()
     zf = zipfile.ZipFile('GlobalLandTemperatures.zip')
     file_handle = zf.open('GlobalLandTemperaturesByCountry.csv')
     return pd.read_csv(file_handle)
 
-def graph():
-    #Cleaning up data by removing duplicate names
-    global_temp_country_clean = global_temp_country[~global_temp_country['Country'].isin(
-        ['Denmark', 'Antarctica', 'France', 'Europe', 'Netherlands',
-        'United Kingdom', 'Africa', 'South America'])]
+def globe_graph():
+    """
+    Cleaning data & plotting average land temperature
+    """
+    global_temp_country_clear = global_temp_country[~global_temp_country['Country'].isin(
+    ['Denmark', 'Antarctica', 'France', 'Europe', 'Netherlands',
+     'United Kingdom', 'Africa', 'South America'])]
 
-    global_temp_country_clean = global_temp_country_clean.replace(
-        ['Denmark (Europe)', 'France (Europe)', 'Netherlands (Europe)', 'United Kingdom (Europe)'],
-        ['Denmark', 'France', 'Netherlands', 'United Kingdom'])
+    global_temp_country_clear = global_temp_country_clear.replace(
+       ['Denmark (Europe)', 'France (Europe)', 'Netherlands (Europe)', 'United Kingdom (Europe)'],
+       ['Denmark', 'France', 'Netherlands', 'United Kingdom'])
 
     #Let's average temperature for each country
 
-    countries = np.unique(global_temp_country_clean['Country'])
+    countries = np.unique(global_temp_country_clear['Country'])
     mean_temp = []
     for country in countries:
-    mean_temp.append(global_temp_country_clean[global_temp_country_clean['Country'] ==
-                                               country]['AverageTemperature'].mean())
+        mean_temp.append(global_temp_country_clear[global_temp_country_clear['Country'] ==
+                                                   country]['AverageTemperature'].mean())
+
+
 
     data = [ dict(
             type = 'choropleth',
@@ -91,7 +96,7 @@ def graph():
                 colorbar = dict(autotick = True, tickprefix = '',
                 title = '# Average\nTemperature,\n°C')
                 )
-            ]
+           ]
 
     layout = dict(
         title = 'Average land temperature in countries',
@@ -106,22 +111,18 @@ def graph():
                         lat = 10),
             ),
             lonaxis =  dict(
-                showgrid = True,
-                gridcolor = 'rgb(102, 102, 102)'
+                    showgrid = True,
+                    gridcolor = 'rgb(102, 102, 102)'
                 ),
-        lataxis = dict(
-                showgrid = True,
-                gridcolor = 'rgb(102, 102, 102)'
-                )
-            ),
-        )
+            lataxis = dict(
+                    showgrid = True,
+                    gridcolor = 'rgb(102, 102, 102)'
+                    )
+                ),
+            )
 
-        fig = dict(data=data, layout=layout)
-        py.iplot(fig, validate=False, filename='worldmap')
-
-
-
-
+    fig = dict(data=data, layout=layout)
+    py.iplot(fig, validate=False, filename='worldmap')
 
 def remove_data():
     """
