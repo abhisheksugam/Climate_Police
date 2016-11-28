@@ -45,3 +45,10 @@ def download_if_needed(URL, filename):
         except:
             e = sys.exc_info()[0]
             print('Error! Data not downloaded.',e)
+
+def get_temperature_data():
+    """
+    Download temperature data, unless already downloaded
+    """
+    download_if_needed('https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data/downloads/GlobalLandTemperatures.zip',
+    'GlobalLandTemperatures.zip')
