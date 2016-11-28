@@ -22,6 +22,7 @@ Users can visualize our data and results and draw conclusions about this undenia
 - pandas
 - matplotlib
 - Jupyter
+- ployly
 
 #### License Information:
 
