@@ -52,3 +52,12 @@ def get_temperature_data():
     """
     download_if_needed('https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data/downloads/GlobalLandTemperatures.zip',
     'GlobalLandTemperatures.zip')
+
+def global_temp_country():
+    """
+    Fetch data (if needed) and extract global temperatures of countries
+    """
+    get_temperature_data()
+    zf = zipfile.ZipFile('GlobalLandTemperatures.zip')
+    file_handle = zf.open('GlobalLandTemperaturesByCountry.csv')
+    return pd.read_csv(file_handle)
