@@ -122,4 +122,19 @@ def globe_graph():
 
     fig = dict(data=data, layout=layout)
     py.iplot(fig, validate=False, filename='worldmap')
-    return fig
+
+
+def remove_data():
+
+    csvRemoved = 0
+    for file in glob.glob('*.csv'):
+        os.remove(file)
+        csvRemoved += 1
+
+    zipRemoved = 0
+    for file in glob.glob('*.zip'):
+        os.remove(file)
+        zipRemoved += 1
+
+    message = 'All files have been removed : Details : {:d} csv files removed, {:d} zip files removed'.format(csvRemoved,zipRemoved)
+    return message
