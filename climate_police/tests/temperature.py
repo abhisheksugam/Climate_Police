@@ -62,6 +62,44 @@ def global_temp_country():
     file_handle = zf.open('GlobalLandTemperaturesByCountry.csv')
     return pd.read_csv(file_handle)
 
+def mercator():
+    """
+    Creates Mercator projection of the world Map tos how temperature
+    """
+    data = [ dict(
+        type = 'choropleth',
+        locations = countries,
+        z = mean_temp,
+        text = countries,
+        locationmode = 'country names',
+        autocolorscale = True,
+        reversescale = False,
+        marker = dict(
+            line = dict (
+                color = 'rgb(180,180,180)',
+                width = 0.5
+            ) ),
+        colorbar = dict(
+            autotick = False,
+            title = 'Average land temperature'),
+      ) ]
+
+    layout = dict(
+        title = 'Average land temperature by country',
+        geo = dict(
+            showframe = False,
+            showcoastlines = False,
+            showocean = True,
+            oceancolor = 'rgb(10,200,255)',
+            projection = dict(
+                type = 'Mercator'
+                )
+            )
+        )
+
+    fig = dict( data=data, layout=layout )
+    py.iplot( fig, validate=False, filename='d3-world-map' )
+
 def globe_graph():
     """
     Cleaning data & plotting average land temperature
