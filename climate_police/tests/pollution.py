@@ -1,3 +1,5 @@
+
+
 import wget
 import os
 import zipfile
@@ -57,7 +59,7 @@ def get_pollutants_data():
 
 def pollutants_data():
     """
-    Fetch data (if needed) and extract global temperatures of countries
+    Fetch data (if needed) and extract pollution data 
     """
     get_pollutants_data()
     zf = zipfile.ZipFile('pollutants.zip')
@@ -67,23 +69,22 @@ def pollutants_data():
 def remove_data():
 
     #Remove all the zip files  
-    for file in glob.glob('*.zip'):  #glob.glob returns a list of all path names that match my pathname (.zip)
+    for file in glob.glob('*.zip'):  
         os.remove(file)
 
 
     #Remove all the csv files
-    for file in glob.glob('*.csv'): #glob.glob returns a list of all path names that match my pathname (.csv)
+    for file in glob.glob('*.csv'): 
         os.remove(file)
 
 
-    for file in glob.glob('*.pyc'):  #glob.glob returns a list of all path names that match my pathname (.zip)
+    for file in glob.glob('*.pyc'):  
         os.remove(file)
-
 
 
     print('Deleted all the cached data')
 
-def plot_average_NO1_1st_max_value(): 
+def plot_average_NO2_1st_max_value(): 
 
     plt.style.use('ggplot')
     df=pollutants_data()
