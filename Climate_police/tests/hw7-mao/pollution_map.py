@@ -5,10 +5,10 @@ py.init_notebook_mode()
 
 from pre_process import pre_process
 
-def pollution_map(df, source, year):
+def pollution_map(df, source, year, option='Mean'):
 	
 	# Pre-processes the pollution data so that it can be plotted by plotly.
-	df2 = pre_process(df)
+	df2 = pre_process(df, source, year, option)
 
 	scl = [[0.0, 'rgb(242,240,247)'],[0.2, 'rgb(218,218,235)'],[0.4, 'rgb(188,189,220)'],\
             [0.6, 'rgb(158,154,200)'],[0.8, 'rgb(117,107,177)'],[1.0, 'rgb(84,39,143)']]
@@ -18,7 +18,7 @@ def pollution_map(df, source, year):
         	colorscale = scl,
         	autocolorscale = False,
         	locations = df2['abbrev'],
-        	z = df2[source+' Mean'].astype(float),
+        	z = df2[source+' '+option].astype(float),
         	locationmode = 'USA-states',
         	text = df2['text'],
         	marker = dict(
@@ -40,5 +40,5 @@ def pollution_map(df, source, year):
             	)
     
 	fig = dict( data=data, layout=layout )
-	py.iplot( fig, filename='d3-cloropleth-map' )
+	py.iplot( fig, filename='us-pollution-map' )
 	return fig
