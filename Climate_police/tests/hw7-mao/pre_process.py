@@ -1,20 +1,20 @@
 from us_state_abbrev import us_state_abbrev
 
-def pre_process(df, source, year):
+def pre_process(df, source, year, option):
 
 	for col in df.columns:
 		df[col] = df[col].astype(str)
     
     # Add a column containing the text displayed when mouse hovering
 	df['text'] = df['state'] + '<br>' +\
-    	source + ' Mean '+df[source+' Mean']+'<br>'+\
-    	source + ' AQI'+df[source+' AQI']
+    	source + ' '+option+' '+df[source+' '+option]+'<br>'+\
+    	#source + ' AQI'+df[source+' AQI']
     
     # Add a column containing the abbreviation of state
 	df["abbrev"] = df["state"].map(us_state_abbrev)
 	
 	# Subset the data by the pollutant source user specified
-	df1 = df.loc[:,['abbrev', 'Date Local', source+' Mean', source+' AQI']]
+	df1 = df.loc[:,['abbrev', 'Date Local', source+' '+option, source+' AQI']]
 	
 	# Group by year
 	df2 = df.set_index(pd.DatetimeIndex(df['Date Local']))
