@@ -1,6 +1,5 @@
 """pollution.py"""
 
-import wget
 import os
 import zipfile
 
@@ -14,13 +13,7 @@ import pandas as pd
 
 import matplotlib 
 import matplotlib.pyplot as plt
-import plotly.offline as py
-import plotly.graph_objs as go
-import plotly.tools as tls
 import seaborn as sns
-
-import plotly
-plotly.offline.init_notebook_mode() 
 
 
 def download_if_needed(URL, filename):
