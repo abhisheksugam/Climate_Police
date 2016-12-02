@@ -12,16 +12,15 @@ def pre_process(df, source, year, option):
     
     # Add a column containing the abbreviation of state
 	df["abbrev"] = df["state"].map(us_state_abbrev)
+	df["year"], df["month"], df["day"] = zip(*df["Date Local"].apply(lambda x: x.split('-', 2)))
 	
 	# Subset the data by the pollutant source user specified
-	df1 = df.loc[:,['abbrev', 'Date Local', source+' '+option, source+' AQI']]
+	df1 = df.loc[:,['abbrev', 'year', source+' '+option, source+' AQI']]
 	
 	# Group by year
-	df2 = df.set_index(pd.DatetimeIndex(df['Date Local']))
-	df2.drop('Date Local', axis=1, inplace=True)
-	df2 = df.resample('A').sum()
+	df2 = df1.groupby(['year', 'abbrev']).mean()
 	
 	# Subset the data by the year user specified
-	df3 = df2.loc[df2['Date Local'].dt.year == year,:]
+	df3 = df2.loc[year]
 	
 	return df3
