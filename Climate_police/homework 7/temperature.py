@@ -64,7 +64,7 @@ def global_temp_country():
 
 def mercator():
     """
-    Creates Mercator projection of the world Map tos how temperature
+    Creates Mercator projection of the world Map to show temperature
     """
     data = [ dict(
         type = 'choropleth',
