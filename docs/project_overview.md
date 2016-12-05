@@ -1,4 +1,3 @@
-Inline-style:
 ![alt text](https://github.com/abhisheksugam/Climate_Police/blob/master/docs/logo.png "Logo Title Text 1")
 
 
