@@ -1,4 +1,4 @@
-![alt text](https://github.com/abhisheksugam/Climate_Police/blob/master/docs/logo.png "Logo Title Text 1")
+![alt text](https://github.com/abhisheksugam/Climate_Police/blob/master/docs/logo.png "Climate_Police ")
 # Climate Police
 ## "Analysis and visualization of Climate change and its correlation with pollution"  
 
