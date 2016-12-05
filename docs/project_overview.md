@@ -1,3 +1,7 @@
+Inline-style:
+![alt text](https://github.com/abhisheksugam/Climate_Police/blob/master/docs/logo.png "Logo Title Text 1")
+
+
 #CSE 599 B1 Project
 
 ##Visualization of Climate change & its correlation with pollution
