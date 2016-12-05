@@ -16,7 +16,7 @@ We have two datasets for this project:
     7. City : City of the monitoring site
     8. Date Local : Date of monitoring
 
-    The four pollutants (NO2, O3, SO2 and O3) each has 5 specific columns. For instance, for NO2:
+    The four pollutants (NO2, O3, SO2 and CO) each has 5 specific columns. For instance, for NO2:
         1. NO2 Units : The units measured for NO2
         2. NO2 Mean : The arithmetic mean of concentration of NO2 within a given day
         3. NO2 AQI : The calculated air quality index of NO2 within a given day
