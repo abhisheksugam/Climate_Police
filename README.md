@@ -22,7 +22,6 @@ Users can visualize our data and results and draw conclusions about this undenia
 - NumPy
 - pandas
 - matplotlib
-- Jupyter
 - plotly
 
 #### How to install the packages:
