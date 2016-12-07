@@ -27,26 +27,26 @@ Users can visualize our data and results and draw conclusions about this undenia
 
 #####  How to install the packages:
 
-1. Download miniconda and use the conda command-line tool to update your packages 
+- Download miniconda and use the conda command-line tool to update your packages 
 
-2. Update conda's listing of packages:
+- Update conda's listing of packages:
 
-$ conda update conda
+    $ conda update conda
 
-3. Install IPython notebook:
+- Install IPython notebook:
 
-$ conda install ipython-notebook
+    $ conda install ipython-notebook
 
-4. Install Python's Data Science packages:
+- Install Python's Data Science packages:
 
-$ conda install numpy pandas matplotlib
+    $ conda install numpy pandas matplotlib
 
-5. Install Plotly Package (from PyPI using pip):
+- Install Plotly Package (from PyPI using pip):
 
-$ pip install plotly
+    $ pip install plotly
 
 
-After all the packages have been installed, clone this github repo and navigate to the Climate_Police folder. From here, you can run the demo Notebooks and import all the functions. 
+- After all the packages have been installed, clone this github repo and navigate to the Climate_Police folder. From here, you can run the demo Notebooks and import all the functions. 
 
 #### License Information:
 
