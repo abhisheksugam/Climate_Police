@@ -25,6 +25,29 @@ Users can visualize our data and results and draw conclusions about this undenia
 - Jupyter
 - plotly
 
+#####  How to install the packages:
+
+1. Download miniconda and use the conda command-line tool to update your packages 
+
+2. Update conda's listing of packages:
+
+$ conda update conda
+
+3. Install IPython notebook:
+
+$ conda install ipython-notebook
+
+4. Install Python's Data Science packages:
+
+$ conda install numpy pandas matplotlib
+
+5. Install Plotly Package (from PyPI using pip):
+
+$ pip install plotly
+
+
+After all the packages have been installed, clone this github repo and navigate to the Climate_Police folder. From here, you can run the demo Notebooks and import all the functions. 
+
 #### License Information:
 
 The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT). As a permissive license, it puts only very limited restriction on reuse and has therefore an excellent license compatibility. For detailed description of the contents of license please refer to the file [License](https://github.com/abhisheksugam/Climate_Police/blob/master/License).
@@ -39,18 +62,22 @@ climate_police (master)
 |     .gitignore
 |     License
 |     README.md
-|
+|     setup.py
 |----- docs
 |     |      CSE_599_B1_Project_overview.docx
 |     |      CSE_599_B1_Project_overview.pdf
 |     |      project_overview.md
 |     |      
-|----- climate_police
+|----- Climate_police
 |     |   __init__.py
 |     |
 |     |----- tests
-|     |      |    __init__.py
-|     |      |    demo.ipny
-|     |      |    temperature.py
+|     |      |  
+|     |      |  
+|     |      |    
 |     |----- data
-|     |      |   README.md  
+|     |      |   README.md 
+|     |----- examples 
+|     |      |  
+|     |      |  
+|     |      |  
