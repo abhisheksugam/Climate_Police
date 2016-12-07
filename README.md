@@ -25,9 +25,9 @@ Users can visualize our data and results and draw conclusions about this undenia
 - Jupyter
 - plotly
 
-#####  How to install the packages:
+#### How to install the packages:
 
-- Download miniconda and use the conda command-line tool to update your packages 
+- #####Download miniconda and use the conda command-line tool to update your packages 
 
 - Update conda's listing of packages:
 
