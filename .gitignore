@@ -2,7 +2,7 @@
 
 
  
- *.scc 
+*.scc 
 
 
 Climate_police/data/pollution_us_2000_2016.csv
@@ -10,13 +10,16 @@ Climate_police/data/GlobalLandTemperatures.zip
   
 
 
- 
-+# Python cache 
 
+# Byte-compiled / optimized / DLL files
+build/
+dist/
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
 
- 
-+__pycache__ 
-
-
- 
-+ *~
+.DS_Store
+.ipynb_checkpoints
