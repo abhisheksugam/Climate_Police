@@ -8,9 +8,9 @@ the climate change all over the world and levels of pollutans in United States.
 DESCRIPTION         = "Climate Police: Analysis and visualization of Climate change and its correlation with pollution"
 NAME                = "Climate_Police"
 PACKAGES            = ['Climate_Police',
-                       'Climate_Police.tests',
                        'Climate_Police.data',
                        'Climate_Police.examples',
+                       'Climate_Police.tests',
                        ]
 PACKAGE_DATA        = {'Climate_Police': ['examples/*.ipynb']}
 AUTHOR              = "Abhishek Sugam | Yuanqi Mao | Giovanni Sinapi"

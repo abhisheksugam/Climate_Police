@@ -69,14 +69,14 @@ climate_police (master)
 |     |      
 |----- Climate_police
 |     |   __init__.py
-|     |
-|     |----- tests
-|     |      |  
-|     |      |  
-|     |      |    
+|     |  
 |     |----- data
 |     |      |   README.md 
 |     |----- examples 
+|     |      |  
+|     |      |  
+|     |      |  
+|     |----- tests
 |     |      |  
 |     |      |  
 |     |      |  
