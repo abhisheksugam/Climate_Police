@@ -134,4 +134,5 @@ def plot_pollutants(df, year, state):
 	)
 	fig = Figure(data=data, layout=layout)
 	py.iplot(fig)
+	plotSuccessful= "Levels of pollutants plotted."
 	return fig 
