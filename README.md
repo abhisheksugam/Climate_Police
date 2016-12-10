@@ -6,7 +6,9 @@
 
 The Climate Police team is eager to make this project as an eye opener for people and companies denying the climate change and the adverse effect of pollution.
 
-Users can visualize our data and results and draw conclusions about this undeniable problem.
+The motivation behind this project is to build an open-source tool for scientists, researchers and scientific institutions who are interested in a detailed analysis of the climate changes occurred all over the world from the 1750 to the 2013, with a particular focus on the detrimental action of four different pollutants (NO2, O3, SO2 and CO) in the United States over the last sixteen years.   
+
+Users can visualize our results and draw conclusions about this undeniable problem.
 
 
 
@@ -57,7 +59,7 @@ The MIT License is a permissive free software license originating at the Massach
 
 The package is organized as follows:
 ```
-climate_police (master)
+Climate_Police (master)
 |     .gitignore
 |     License
 |     README.md
@@ -67,7 +69,7 @@ climate_police (master)
 |     |      CSE_599_B1_Project_overview.pdf
 |     |      project_overview.md
 |     |      
-|----- Climate_police
+|----- Climate_Police
 |     |   __init__.py
 |     |  
 |     |----- data
