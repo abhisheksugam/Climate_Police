@@ -3,6 +3,7 @@ LONG_DESCRIPTION = """
 This package provides a Python tool for building visualizations of data related to 
 the climate change all over the world and levels of pollutans in United States. 
 
+
 """
 
 DESCRIPTION         = "Climate Police: Analysis and visualization of Climate change and its correlation with pollution"
@@ -19,19 +20,15 @@ URL                 = 'https://github.com/abhisheksugam/Climate_Police'
 DOWNLOAD_URL        = 'https://github.com/abhisheksugam/Climate_Police'
 LICENSE             = 'MIT'
 INSTALL_REQUIRES    = ['ipython','pandas','plotly']
-VERSION             = version('Climate_Police/__init__.py')
 
 
-from setuptools import setup, find_packages
-# To use a consistent encoding
-from codecs import open
-from os import path
-
-here = path.abspath(path.dirname(__file__))
+try:
+    from setuptools import setup
+except ImportError:
+    from distutils.core import setup
 
 
 setup(name=NAME,
-      version=VERSION,
       description=DESCRIPTION,
       long_description=LONG_DESCRIPTION,
       author=AUTHOR,
