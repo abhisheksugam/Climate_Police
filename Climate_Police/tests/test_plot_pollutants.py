@@ -4,12 +4,9 @@
 import unittest
 from plot_pollutants import plot_pollutants
 import pandas as pd
-import zipfile
 
 
-zf = zipfile.ZipFile('uspollution.zip')
-file_handle = zf.open('pollution_us_2000_2016.csv')
-df=pd.read_csv(file_handle)
+df = pd.read_csv("../data/pollution_us_2000_2016.csv")
 year="2010"
 state="Arizona"
 
