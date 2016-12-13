@@ -1,12 +1,12 @@
 ![alt text](https://github.com/abhisheksugam/Climate_Police/blob/master/docs/logo.png "Climate_Police ")
 # Climate Police
-## "Analysis and visualization of Climate change and its correlation with pollution"  
+## "Analysis and visualization of Climate change and Pollution"  
 
 ### Abhishek Sugam |  Yuanqi Mao | Giovanni Sinapi
 
 The Climate Police team is eager to make this project as an eye opener for people and companies denying the climate change and the adverse effect of pollution.
 
-The motivation behind this project is to build an open-source tool for scientists, researchers and scientific institutions who are interested in a detailed analysis of the climate changes occurred all over the world from the 1750 to the 2013, with a particular focus on the detrimental action of four different pollutants (NO2, O3, SO2 and CO) in the United States over the last sixteen years.   
+The motivation behind this project is to build an open-source tool for data journalists, scientists, researchers and scientific institutions who are interested in a detailed analysis of the climate changes occurred all over the world from the 1750 to the 2013, with a particular focus on the detrimental action of four different pollutants (NO2, O3, SO2 and CO) in the United States over the last sixteen years.   
 
 Users can visualize our results and draw conclusions about this undeniable problem.
 
@@ -71,20 +71,26 @@ Climate_Police (master)
 |     README.md
 |     setup.py
 |----- docs
-|     |      CSE_599_B1_Project_overview.docx
-|     |      CSE_599_B1_Project_overview.pdf
 |     |      project_overview.md
-|     |      
+|     |      final_presentation.ppt 
 |----- Climate_Police
 |     |   __init__.py
 |     |  
 |     |----- data
 |     |      |   README.md 
 |     |----- examples 
-|     |      |  
-|     |      |  
+|     |      |  Temperature_demo.ipynb
+|     |      |  pollutants_plots.ipynb
+|     |      |  pollution_map_demo.ipynb
+|     |      |  temp_map_demo.ipynb
 |     |      |  
 |     |----- tests
-|     |      |  
-|     |      |  
-|     |      |  
+|     |      |  plot_pollutants.py
+|     |      |  pollution_change.py
+|     |      |  pollution_map.py
+|     |      |  pre_process.py
+|     |      |  temp_increase.py
+|     |      |  temp_map.py
+|     |      |  temp_pre_process.py
+|     |      |  test_plot_pollutants.py
+|     |      |  us_state_abbrev.py
