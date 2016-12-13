@@ -53,6 +53,12 @@ Users can visualize our results and draw conclusions about this undeniable probl
 
 The MIT License is a permissive free software license originating at the Massachusetts Institute of Technology (MIT). As a permissive license, it puts only very limited restriction on reuse and has therefore an excellent license compatibility. For detailed description of the contents of license please refer to the file [License](https://github.com/abhisheksugam/Climate_Police/blob/master/License).
 
+### Demo notebooks:
+
+[Temperature Demo](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/Temperature_demo.ipynb).
+[Pollutants Demo](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/pollutants_plots.ipynb).
+[Temperature Map](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/temp_map_demo.ipynb).
+[Pollution Map](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/pollution_map_demo.ipynb).
 
 ----
 ### Directory structure
