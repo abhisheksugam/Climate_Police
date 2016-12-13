@@ -17,7 +17,7 @@ Users can visualize our results and draw conclusions about this undeniable probl
 
 #### Programming language:
 
-- Python version 3.0
+- Python version 3.0 and above 
 
 #### Python packages needed:
 
