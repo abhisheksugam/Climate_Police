@@ -55,10 +55,10 @@ The MIT License is a permissive free software license originating at the Massach
 
 ### Demo notebooks:
 
-[Temperature Demo](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/Temperature_demo.ipynb).
-[Pollutants Demo](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/pollutants_plots.ipynb).
-[Temperature Map](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/temp_map_demo.ipynb).
-[Pollution Map](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/pollution_map_demo.ipynb).
+- [Temperature Demo](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/Temperature_demo.ipynb).
+- [Pollutants Demo](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/pollutants_plots.ipynb).
+- [Temperature Map](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/temp_map_demo.ipynb).
+- [Pollution Map](https://github.com/abhisheksugam/Climate_Police/blob/master/Climate_Police/examples/pollution_map_demo.ipynb).
 
 ----
 ### Directory structure
