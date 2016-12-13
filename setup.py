@@ -15,7 +15,7 @@ PACKAGES            = ['Climate_Police',
                        ]
 PACKAGE_DATA        = {'Climate_Police': ['examples/*.ipynb']}
 AUTHOR              = "Abhishek Sugam | Yuanqi Mao | Giovanni Sinapi"
-AUTHOR_EMAIL        = "/"
+AUTHOR_EMAIL        = "asugam@uw.edu/sinapg@uw.edu"
 URL                 = 'https://github.com/abhisheksugam/Climate_Police'
 DOWNLOAD_URL        = 'https://github.com/abhisheksugam/Climate_Police'
 LICENSE             = 'MIT'
