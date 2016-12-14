@@ -81,6 +81,7 @@ Climate_Police (master)
 |     |      |   README.md 
 |     |----- examples 
 |     |      |  Temperature_demo.ipynb
+|     |      |  Temperature_rise_random_countries.ipynb
 |     |      |  pollutants_plots.ipynb
 |     |      |  pollution_map_demo.ipynb
 |     |      |  temp_map_demo.ipynb
