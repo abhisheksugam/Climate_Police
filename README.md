@@ -72,7 +72,8 @@ Climate_Police (master)
 |     setup.py
 |----- docs
 |     |      project_overview.md
-|     |      final_presentation.ppt 
+|     |      Climate_police.pptx 
+|     |      logo.png
 |----- Climate_Police
 |     |   __init__.py
 |     |  
