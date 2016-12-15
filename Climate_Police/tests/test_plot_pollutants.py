@@ -14,9 +14,9 @@ class TestPlot(unittest.TestCase):
   
     def testPlotPollutants(self):
         
-        result=plot_pollutants(df, year, state)
+        fig, flag = plot_pollutants(df, year, state)
         expected_explanation="Levels of pollutants plotted."
-        self.assertTrue(result, expected_explanation)
+        self.assertEqual(flag, expected_explanation)
 
 if __name__ == '__main__':
     unittest.main()
