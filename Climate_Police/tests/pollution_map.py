@@ -39,4 +39,5 @@ def pollution_map(df, source, year, option='Mean'):
     
 	fig = dict( data=data, layout=layout )
 	py.iplot( fig, filename='us-pollution-map' )
-	return fig
+	plotSuccessful = "Pollution map plotted."
+	return fig, plotSuccessful
