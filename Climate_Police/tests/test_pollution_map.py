@@ -18,7 +18,7 @@ class TestPlot(unittest.TestCase):
         
 		fig, flag = pollution_map(df, source, year, option)
         expected_explanation="Pollution map plotted."
-        self.assertTrue(flag, expected_explanation)
+        self.assertEqual(flag, expected_explanation)
 
 if __name__ == '__main__':
     unittest.main()
