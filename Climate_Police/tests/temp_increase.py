@@ -45,4 +45,5 @@ def temp_increase(temp, year):
     
 	fig = dict( data=data, layout=layout )
 	py.iplot( fig, filename='us-temperature-change-map' )
-	return fig
+	plotsuccessful = "Temperature increase map plotted."
+	return fig, plotsuccessful
