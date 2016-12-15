@@ -1,0 +1,24 @@
+#run the test with default values of df, state and year 
+
+
+import unittest
+from temp_map import temp_map
+import pandas as pd
+import zipfile
+
+
+zf = zipfile.ZipFile('../data/GlobalLandTemperatures.zip')
+temp = pd.read_csv(zf.open('GlobalLandTemperaturesByState.csv'))
+
+year = '2008' # options: 1900 - 2013
+
+class TestPlot(unittest.TestCase):
+  
+    def testPlotPollutants(self):
+        
+		fig, flag = temp_increase(temp, year)
+        expected_explanation="Temperature increase map plotted."
+        self.assertEqual(flag, expected_explanation)
+
+if __name__ == '__main__':
+    unittest.main()
