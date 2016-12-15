@@ -49,4 +49,5 @@ def pollution_change(pollution, source, year, option='Mean'):
     
 	fig = dict( data=data, layout=layout )
 	py.iplot( fig, filename='us-pollution-change-map' )
-	return fig
+	plotSuccessful = "Pollution change map plotted."
+	return fig, plotSuccessful
