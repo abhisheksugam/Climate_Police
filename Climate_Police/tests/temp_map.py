@@ -39,4 +39,5 @@ def temp_map(temp, year):
     
 	fig = dict( data=data, layout=layout )
 	py.iplot( fig, filename='us-temperature-map' )
-	return fig
+	plotSuccessful = "Temperature map plotted."
+	return fig, plotSuccessful
